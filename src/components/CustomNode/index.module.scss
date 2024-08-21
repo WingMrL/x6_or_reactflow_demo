@@ -1,0 +1,48 @@
+.handle-container {
+
+  .handle-body {
+    width: 100px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      width: 100%;
+      height: 30px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .text {
+      width: 100%;
+      height: 30px;
+      color: #666;
+    }
+  }
+
+  .bottom-handle {
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .line {
+      height: 10px;
+      width: 1px;
+      background-color: #666;
+    }
+
+    .handle-button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    
+  }
+}
