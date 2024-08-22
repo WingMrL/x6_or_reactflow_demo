@@ -23,9 +23,16 @@ export const useAutoLayout = () => {
       setNodes([...layouted.nodes]);
       setEdges([...layouted.edges]);
 
-      window.requestAnimationFrame(() => {
-        fitView();
-      });
+      // window.requestAnimationFrame(() => {
+      //   fitView({
+      //     duration: 500
+      //   });
+      // });
+      setTimeout(() => {
+        fitView({
+          duration: 500,
+        });
+      }, 150);
     },
     [setEdges, setNodes, fitView, nodes, edges]
   );
