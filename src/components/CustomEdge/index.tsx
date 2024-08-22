@@ -5,8 +5,10 @@ export default function CustomEdge({ id, sourceX, sourceY, targetX, targetY }) {
     sourceX,
     sourceY,
     targetX,
+    // targetY,
+    borderRadius: 0,
     targetY: targetY + 10,
-    centerY: 116,
+    // centerY: 116,
   });
 
   return (
