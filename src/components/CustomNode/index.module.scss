@@ -1,4 +1,13 @@
 .handle-container {
+  position: relative;
+
+  :global {
+    .react-flow__handle-bottom,
+    .react-flow__handle-top {
+      background: transparent;
+      border: none;
+    }
+  }
 
   .handle-body {
     width: 100px;
@@ -21,28 +30,35 @@
     }
   }
 
-  .bottom-handle {
-    width: 20px;
-    height: 20px;
-    transform: translate(-50%);
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .expand-wrapper {
+    width: 21px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
 
     .line {
-      height: 10px;
       width: 1px;
-      background-color: #666;
+      background-color: #b1b1b7;
+      height: 20px;
+      position: relative;
+      left: 10px;
     }
 
-    .handle-button {
-      width: 10px;
-      height: 10px;
+    .icon {
+      background-color: rgb(50, 139, 94);
+      width: 21px;
+      height: 20px;
+      line-height: 20px;
+      box-sizing: border-box;
+      font-size: 12px;
       border-radius: 50%;
-      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid #fff;
     }
-
-    
   }
 }
